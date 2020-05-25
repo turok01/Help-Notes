@@ -1,0 +1,14 @@
+﻿New project -> From version control->
+URL: Copy from GitHub (https://github.com/turok01/SpringMPS.git)
+Directory: C:\Java\source\SpringPlusAngularMPS
+
+C:\Java\source\SpringPlusAngularMPS>git remote -v
+origin  https://github.com/turok01/SpringMPS.git (fetch)
+origin  https://github.com/turok01/SpringMPS.git (push)
+
+C:\Java\source\SpringPlusAngularMPS>git remote set-url origin https://github.com/turok01/SpringPlusAngularMPS.git
+
+create new Repository on GitHub (with name "SpringPlusAngularMPS")
+//C:\Java\source\SpringPlusAngularMPS>git add -A
+//C:\Java\source\SpringPlusAngularMPS>git commit -m "Initail commit"
+C:\Java\source\SpringPlusAngularMPS>git push origin master

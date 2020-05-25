@@ -1,0 +1,12 @@
+﻿Add Angular in Spring Application
+cd C:\Java\source\SpringPlusAngularMPS\
+
+C:\Java\source\SpringPlusAngularMPS>ng new MPS-ui
+? Would you like to add Angular routing? Yes
+? Which stylesheet format would you like to use? CSS
+
+C:\Java\source\SpringPlusAngularMPS>cd C:\Java\source\SpringPlusAngularMPS\MPS-ui\
+
+C:\Java\source\SpringPlusAngularMPS\MPS-ui>ng serve --open
+
+
