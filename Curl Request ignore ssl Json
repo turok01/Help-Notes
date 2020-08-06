@@ -1,0 +1,1 @@
+$curl --insecure --request PATCH https://localhost:8443/rest/3 -d {"nameSubst":"РП-218"}
