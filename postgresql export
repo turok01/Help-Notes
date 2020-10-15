@@ -1,1 +1,2 @@
 pg_dump -Fc --no-acl --no-owner -h localhost -U root SpringMPS > springmpsdb.dump
+pg_dump -Fc --no-acl --no-owner -h localhost -U root -t username -t transformersubsts SpringMPS > springmpsdb2t.dump
