@@ -1,3 +1,4 @@
+  
 ﻿New project -> From version control->
 URL: Copy from GitHub (https://github.com/turok01/SpringMPS.git)
 Directory: C:\Java\source\SpringPlusAngularMPS
@@ -12,3 +13,35 @@ create new Repository on GitHub (with name "SpringPlusAngularMPS")
 //C:\Java\source\SpringPlusAngularMPS>git add -A
 //C:\Java\source\SpringPlusAngularMPS>git commit -m "Initail commit"
 C:\Java\source\SpringPlusAngularMPS>git push origin master
+
+---------------For Java and Angular-------------------
+﻿New project -> From version control->
+URL: Copy from GitHub (https://github.com/turok01/SpringMPS.git)
+Directory: C:\Java\source\SpringSecurityPlusAngularMPS
+
+C:\Java\source\SpringSecurityPlusAngularMPS>git remote -v
+origin  https://github.com/turok01/SpringPlusAngularMPS.git (fetch)
+origin  https://github.com/turok01/SpringPlusAngularMPS.git (push)
+
+C:\Java\source\SpringSecurityPlusAngularMPS>git remote set-url origin https://github.com/turok01/SpringSecurityPlusAngularMPS.git
+
+create new Repository on GitHub (with name "SpringSecurityPlusAngularMPS")
+
+C:\Java\source\SpringSecurityPlusAngularMPS>git push origin master
+
+--create new branch
+C:\Java\source\SpringSecurityPlusAngularMPS>git checkout -b oauth2
+--------
+?C:\Java\source\SpringSecurityPlusAngularMPS\MPS-ui>git init
+?Initialized empty Git repository in C:/Java/source/SpringSecurityPlusAngularMPS/MPS-ui/.git/
+
+C:\Java\source\SpringSecurityPlusAngularMPS\MPS-ui>git remote add origin https://github.com/turok01/angular-rest.git
+---
+
+---delete content of MPS-ui folder (add to zip)
+C:\Java\source\SpringSecurityPlusAngularMPS>ng new MPS-ui
+--rewrite content of MPS-ui folder from archive
+
+
+
+
