@@ -1,0 +1,53 @@
+//ssh-ключ привязать к репозиторию
+
+git clone <repo_url>
+
+c:\Java\source\_RSSchool\git-lesson\rschool-git>git config --global --list
+filter.lfs.process=git-lfs filter-process
+filter.lfs.required=true
+filter.lfs.clean=git-lfs clean -- %f
+filter.lfs.smudge=git-lfs smudge -- %f
+user.name=Igor Davidyuk
+user.email=toolbox@tut.by
+merge.tool=p4merge
+mergetool.p4merge.path=d:\P4Merge\p4merge.exe
+core.autocrlf=true
+
+c:\Java\source\_RSSchool\git-lesson\rschool-git>git config --global user.name "Igor Davidyuk"
+c:\Java\source\_RSSchool\git-lesson\rschool-git>git config --global user.email "toolbox@tut.by"
+
+c:\Java\source\_RSSchool\git-lesson\rschool-git>git remote -v
+origin  git@github.com:turok01/rschool-git.git (fetch)
+origin  git@github.com:turok01/rschool-git.git (push)
+
+c:\Java\source\_RSSchool\git-lesson\rschool-git>git branch new-feature
+c:\Java\source\_RSSchool\git-lesson\rschool-git>git checkout new-feature
+
+c:\Java\source\_RSSchool\git-lesson\rschool-git>git branch
+  main
+* new-feature
+
+(в main ветке через браузер на сайте github создал файл new_file_in_main_branch)
+(в new-feature изменяю readme)
+
+//добавил строку в файле README на локальной машине
+
+c:\Java\source\_RSSchool\git-lesson\rschool-git>git add -A
+
+c:\Java\source\_RSSchool\git-lesson\rschool-git>git commit -m "add string in readme in branch new-feature"
+[new-feature 3b86b91] add string in readme in branch new-feature
+ 1 file changed, 1 insertion(+)
+
+c:\Java\source\_RSSchool\git-lesson\rschool-git>git push origin new-feature
+
+$ git checkout new-feature
+$ git merge master 
+// ==git merge master new-feature (забрать изменения из мастера в новую ветку)
+// затем $ git push
+
+// если $ git checkout new-feature
+//	$ git rebase master 
+//	($ git rebase -i master)(pick or fixup)
+// то затем git push --forse
+
+
