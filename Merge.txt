@@ -1,0 +1,5 @@
+git checkout develop
+git pull
+git merge FeatureBranch
+// if everything is OK //если все ок
+git push
