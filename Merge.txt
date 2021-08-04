@@ -1,5 +1,15 @@
 git checkout develop
 git pull
-git merge FeatureBranch
-// if everything is OK //если все ок
+git merge GISUN-1813
+если все ок
 git push
+
+---------
+git rebase develop
+--------------
+git push origin +branch
+--------------------
+
+
+Save and close the editor through
+esc --> :wq
